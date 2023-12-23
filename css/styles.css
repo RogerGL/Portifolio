@@ -1,15 +1,4 @@
 @charset "UTF-8";
-/*!
-* Start Bootstrap - Personal v1.0.1 (https://startbootstrap.com/template-overviews/personal)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-personal/blob/master/LICENSE)
-*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -3785,6 +3774,13 @@ textarea.form-control-lg {
   height: 80px;
   
 }
+.icon-container-dev-project {
+  
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  
+}
 .icon-wrapper-test {
   height: 100px;
 }
@@ -5885,6 +5881,8 @@ textarea.form-control-lg {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  max-width: 100%;
+  max-height: 400px;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {

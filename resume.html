@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
 
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Template</title>
+        <title>Resume</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -57,11 +58,12 @@
                             <div class="d-flex align-items-center justify-content-between mb-4">
                                 <h2 class="text-danger-t fw-bolder mb-0">Experience</h2>
                                 <!-- Download resume button-->
-                                <!-- Note: Set the link href target to a PDF file within your project-->
+                                <!-- Note: Set the link href target to a PDF file within your project
                                 <a class="btn btn-danger px-4 py-3" href="#!">
                                     <div class="d-inline-block bi bi-download me-2"></div>
                                     Download Resume
                                 </a>
+                                -->
                             </div>
                             <!-- Experience Card 1-->
                             <div class="card shadow border-0 rounded-4 mb-5">
@@ -69,29 +71,68 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-danger-t fw-bolder mb-2">2019 - Present</div>
-                                                <div class="small fw-bolder">Web Developer</div>
-                                                <div class="small text-muted">Stark Industries</div>
-                                                <div class="small text-muted">Los Angeles, CA</div>
+                                                <div class="text-danger-t fw-bolder mb-2">2023 - Present</div>
+                                                <div class="small fw-bolder">Software Developer FullStack</div>
+                                                <div class="small text-muted">Zarpo Viagens</div>
+                                                <div class="small text-muted">São Paulo, SP</div>
                                             </div>
+                                            <button class="btn btn-outline-danger mt-3 show-details-btn" data-bs-toggle="modal" data-bs-target="#modalDetails">
+                                                Ver detalhes
+                                            </button>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8">
+                                            <div class="limited-text">
+                                                <p>Direcionei meus esforços principalmente para o ecossistema de comércio eletrônico voltado a viagens, com foco especial na comercialização de hotéis de alto padrão, elevando assim a qualidade do mercado. No segmento de Hotéis de Luxo, atuei como desenvolvedor full stack na plataforma baseada no Magento 2. Destaquei-me pela excelência na oferta de hotéis luxuosos, proporcionando aos clientes uma experiência de alta qualidade.</p>
+
+                                                <p>Em estreita colaboração com a equipe, contribuí significativamente para o desenvolvimento de uma API interna que otimizou o acesso às informações dos hotéis e à disponibilidade de datas. Utilizei Laravel na Zarpo Viagens para elaborar essa API. Trabalhar em um ambiente altamente colaborativo foi gratificante, oferecendo uma oportunidade valiosa para aprimorar minhas habilidades no Laravel. Meu comprometimento resultou em entregas bem-sucedidas, consolidando ainda mais minha experiência com essa tecnologia.</p>
+                                                
+                                                <p>Como desenvolvedor full stack, expandi minhas competências em PHP, aprofundei meu conhecimento em Vue.js e participei na criação de um sistema interno para gerenciar hotéis, promoções, acomodações, ocupações, visando um controle total e uma integração mais eficiente com a plataforma do Magento.</p>
+                                                não apenas aprimoraram minhas habilidades técnicas, mas também me permitiram colaborar em equipes dedicadas e compartilhar conhecimento com colegas e freelancers. Estou entusiasmado para continuar trazendo minha paixão e expertise para futuros desafios tecnológicos.
+                                            </div>                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                               <!-- Modal genérico para exibir os detalhes -->
+                                <div class="modal fade" id="modalDetails" tabindex="-1" aria-labelledby="modalDetailsLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="modalDetailsLabel">Detalhes da Experiência</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="experience-details">
+                                                    <!-- Detalhes da experiência aparecerão aqui -->
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             <!-- Experience Card 2-->
                             <div class="card shadow border-0 rounded-4 mb-5">
                                 <div class="card-body p-5">
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-danger-t fw-bolder mb-2">2017 - 2019</div>
-                                                <div class="small fw-bolder">SEM Specialist</div>
-                                                <div class="small text-muted">Wayne Enterprises</div>
-                                                <div class="small text-muted">Gotham City, NY</div>
+                                                <div class="text-danger-t fw-bolder mb-2">2021 - 2022</div>
+                                                <div class="small fw-bolder">Intern</div>
+                                                <div class="small text-muted">Zarpo Viagens</div>
+                                                <div class="small text-muted">São Paulo, SP</div>
                                             </div>
+                                            <button class="btn btn-outline-danger mt-3 show-details-btn " data-bs-toggle="modal" data-bs-target="#modalDetails">
+                                                Ver detalhes
+                                            </button>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div class="limited-text">
+                                            Ao longo do estágio, pude expandir minha compreensão prática em Laravel, além de fortalecer habilidades em PHP e Vue.js. Uma das minhas realizações mais gratificantes foi a participação na criação de um sistema interno voltado para o gerenciamento completo de hotéis, promoções, acomodações e ocupações. Este sistema não só aprimorou a eficiência interna, mas também facilitou a integração com a plataforma do Magento, garantindo um funcionamento mais suave e eficaz.
+
+                                            Este estágio proporcionou um ambiente colaborativo e desafiador, onde pude aplicar conhecimentos teóricos na prática, contribuir com soluções inovadoras e aprender com profissionais experientes. Estou entusiasmado para continuar expandindo meu conhecimento e habilidades técnicas em futuras oportunidades.
+                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -105,18 +146,31 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
+                                                <div class="text-secondary fw-bolder mb-2">2021 - 2024</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">Barnett College</div>
-                                                    <div class="small text-muted">Fairfield, NY</div>
+                                                    <div class="small fw-bolder">UNINOVE</div>
+                                                    <div class="small text-muted">São Paulo, SP</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Master's</div>
-                                                    <div class="small text-muted">Web Development</div>
+                                                    <div class="small text-muted">Sistemas da Informação</div>
                                                 </div>
+                                                
                                             </div>
+                                            <button class="btn btn-outline-danger mt-3 show-details-btn " data-bs-toggle="modal" data-bs-target="#modalDetails">
+                                                Ver detalhes
+                                            </button>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div class="limited-text">
+                                            À medida que avancei no curso, aprofundei meu conhecimento em áreas como Banco de Dados, Sistemas Operacionais e Redes de Computadores. Entendi como os sistemas funcionam em diferentes camadas, desde a interação do usuário até os bastidores dos servidores e a comunicação entre dispositivos.
+
+                                            Além disso, disciplinas de Engenharia de Software me ensinaram a conceber, projetar e implementar sistemas complexos, utilizando metodologias ágeis como Scrum e práticas de desenvolvimento colaborativo.
+
+                                            Outro ponto crucial foi a introdução à Análise de Dados e Inteligência Artificial. Aprendi a extrair insights valiosos a partir de conjuntos massivos de dados, utilizando técnicas de machine learning e análise estatística para tomar decisões embasadas.
+
+                                            No decorrer do curso, trabalhei em projetos interdisciplinares que replicaram cenários reais do mercado. Isso me proporcionou a oportunidade de aplicar todos os conhecimentos teóricos adquiridos em situações práticas, colaborando em equipes multidisciplinares e desenvolvendo soluções inovadoras.
+
+                                            O curso em Sistemas de Informação não apenas me proporcionou uma base sólida em tecnologia, mas também desenvolveu minhas habilidades analíticas, de resolução de problemas e a capacidade de me adaptar a um ambiente em constante evolução tecnológica.
+                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -126,18 +180,27 @@
                                     <div class="row align-items-center gx-5">
                                         <div class="col text-center text-lg-start mb-4 mb-lg-0">
                                             <div class="bg-light p-4 rounded-4">
-                                                <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
+                                                <div class="text-secondary fw-bolder mb-2">2017 - 2018</div>
                                                 <div class="mb-2">
-                                                    <div class="small fw-bolder">ULA</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
+                                                    <div class="small fw-bolder">ETEC Basilides de Godoy</div>
                                                 </div>
                                                 <div class="fst-italic">
-                                                    <div class="small text-muted">Undergraduate</div>
-                                                    <div class="small text-muted">Computer Science</div>
+                                                    <div class="small text-muted">Desenvolvimento de Sistemas</div>
                                                 </div>
                                             </div>
+                                            <button class="btn btn-outline-danger mt-3 show-details-btn " data-bs-toggle="modal" data-bs-target="#modalDetails">
+                                                Ver detalhes
+                                            </button>
                                         </div>
-                                        <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
+                                        <div class="col-lg-8"><div class="limited-text">
+                                            Ao longo do curso, absorvi conhecimentos que vão desde os fundamentos essenciais de programação até a complexidade do design de sistemas. A experiência foi enriquecida por disciplinas abrangentes que englobavam não apenas a criação de códigos, mas também a compreensão profunda de arquitetura de software e análise de requisitos.
+
+                                            A oportunidade de trabalhar em projetos reais em equipe foi um dos pontos altos. Esses desafios práticos me proporcionaram insights valiosos sobre a dinâmica de colaboração, a importância do planejamento e a resolução eficaz de problemas complexos. A interação com colegas e professores também foi fundamental, não apenas para a troca de conhecimentos, mas também para o desenvolvimento de habilidades interpessoais cruciais para o ambiente de trabalho.
+                                                                                    
+                                            Além disso, adquiri competências em diversas linguagens de programação, ferramentas de desenvolvimento e bancos de dados, explorando áreas como desenvolvimento web, mobile e técnicas de gestão de projetos.
+                                                                                    
+                                            Essa jornada na ETEC Basilides de Godoy foi fundamental para a construção de uma base sólida e para a minha visão mais ampla sobre o universo da tecnologia. Estou confiante de que os aprendizados adquiridos serão pilares sólidos para os desafios futuros e para a criação de soluções inovadoras no campo da tecnologia.
+                                        </div></div>
                                     </div>
                                 </div>
                             </div>
@@ -156,15 +219,21 @@
                                             <h3 class="fw-bolder mb-0"><span class="text-gradient-danger d-inline">Professional Skills</span></h3>
                                         </div>
                                         <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Kanban - Scrum</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">MVC - MVT</div></div>
                                             <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
                                         </div>
-                                        <div class="row row-cols-1 row-cols-md-3">
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
+                                        <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Object Calisthenics</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SOLID</div></div>
                                             <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
                                         </div>
+                                        <div class="row row-cols-1 row-cols-md-3">
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Communication</div></div>
+                                            <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Clean Code</div></div>
+                                            <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Team Work</div></div>
+                                        </div>
+                                        
                                     </div>
                                     <!-- Languages list-->
                                     <div class="mb-0">
@@ -241,7 +310,7 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; Roger Lopez 2023</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
                         <span class="mx-1">&middot;</span>

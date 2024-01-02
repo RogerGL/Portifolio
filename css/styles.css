@@ -3770,9 +3770,11 @@ textarea.form-control-lg {
 
 .icon-container-dev {
   
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 80px;
+  padding-top: 10px;
   
 }
 .icon-container-dev-project {
@@ -8404,6 +8406,28 @@ textarea.form-control-lg {
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+
+.icon-container-dev::after {
+  content: attr(data-name);
+  position: absolute;
+  top: 0; /* Posicionado no topo do contêiner */
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.icon-container-dev:hover::after {
+  display: block;
+}
+
+.icon-container-dev:hover {
+  opacity: 0.5;
 }
 
 .bg-darkmode{
